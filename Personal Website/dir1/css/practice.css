@@ -1,0 +1,268 @@
+'Lato', sans-serif/* Global */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.container{
+  padding: 100px;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+.button_1{
+  font-size: 15px;
+  font-family: 'Lato', sans-serif;
+  height: 38px;
+  width: 30%;
+  border: 3px solid #B1A3FF;
+  background-color: #181818;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #ffffff;
+}
+
+.button_1:active{
+  position: relative;
+  bottom: 2px;
+}
+
+/* Body */
+body{
+  padding: 0;
+  margin: 0;
+  color: #ffffff;
+  background-color: #181818;
+}
+
+body h1{
+  font-size: 35px;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+}
+
+body p{
+  font-family: 'Lato', sans-serif;
+}
+
+body .container{
+  border-bottom: 5px #B1A3FF solid;
+  height: 500px;
+}
+
+/* Navigation Menu */
+.nav input[type=checkbox]{
+  visibility: hidden;
+}
+
+.menu{
+  position: fixed;
+  top: 0;
+  height: 40px;
+  width: 100%;
+  z-index: 200;
+  background: #181818;
+  border-bottom: #B1A3FF 5px solid;
+  padding: 15px;
+  margin: 0 30px 0 0;
+}
+
+.menu a{
+  text-align: right;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: 'Lato', sans-serif;
+  clear: right;
+  color: #ffffff;
+  padding: 0 2px 0 2px;
+  margin: 0 5px;
+}
+
+.menu a:hover{
+  color: #6D60B2;
+}
+
+label{
+  margin-right: 30px;
+  font-size: 35px;
+  display: none;
+  width: 26px;
+  float: right;
+}
+
+#toggle{
+  display: none;
+}
+
+/* Home-2 */
+#home-2 .container h1{
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 100px;
+}
+#home-2 .container p{
+  font-size: 50px;
+  color: #FFF3A3;
+  font-family: 'Lato', sans-serif;
+  float: right;
+}
+
+/* Gallery */
+#gallery{
+  color: #ffffff;
+  border-bottom: 5px #B1A3FF solid;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#gallery .title h1{
+  font-size: 60px;
+}
+
+#gallery img{
+  max-width: 100%;
+  max-height: 450px;
+  object-fit: fill;
+}
+
+#gallery .box{
+  display: inline-block;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 5px;
+  margin: 10px;
+  border: 3px #B1A3FF solid;
+  width: 30%;
+}
+
+#gallery .lBox{
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 3px #B1A3FF solid;
+  width: 45%;
+}
+
+#gallery .box:hover, #gallery .lBox:hover{
+  border: 4px #FFF3A3 double;
+}
+
+/* Social Media Icons/Boxes */
+i.fa.fa-facebook, i.fa.fa-twitter, i.fa.fa-instagram{
+  float: right;
+  border-radius: 100%;
+  font-size: 38px;
+  width: 48px;
+  line-height: 50px;
+  margin: 5px;
+  text-align: center;
+}
+
+i.fa.fa-facebook{
+  border: 1px solid #3B5998;
+  color: #3B5998;
+}
+
+i.fa.fa-twitter{
+  border: 1px solid #00aced;
+  color: #00aced;
+}
+
+i.fa.fa-instagram{
+  border: 1px solid #F08080;
+  color: #F08080;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1175px){
+  #home-2 .container h1,
+  #home-2 .container p,
+  footer p,
+  footer i{
+    display: block;
+    float: none;
+    text-align: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  #home-2 .container h1{
+    font-size: 80px
+  }
+
+  #home-2 .container p{
+    font-size: 40px;
+  }
+
+  .container{
+    display: block;
+    padding: 15px;
+  }
+
+  header{
+    padding-bottom: 20px;
+  }
+
+  label{
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu{
+    all: initial;
+  }
+
+  .menu{
+    text-align: center;
+    width: 100%;
+    display: none;
+    background: #181818;
+    border-bottom: #B1A3FF 5px solid;
+    padding: 15px;
+    margin: 0 30px 0 0;
+  }
+
+  .menu a{
+    text-decoration: none;
+    padding-right: 25px;
+    display: block;
+    margin: 10px;
+  }
+
+  #toggle:checked + .menu{
+    display: block;
+  }
+  #gallery,
+  #gallery .box,
+  #gallery .lBox{
+    width: 95%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  #gallery img{
+    height: 300px;
+    width: auto;
+  }
+
+  #gallery .lBox img{
+    height: 200px;
+    width: auto;
+  }

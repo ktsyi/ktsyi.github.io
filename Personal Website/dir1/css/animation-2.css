@@ -1,0 +1,32 @@
+/* Transition Slide */
+.box-slide{
+  border: 8px solid #C7BCFF;
+  position: relative;
+  overflow: hidden;
+}
+
+.box-slide:hover .reveal-left{
+  left: -100%;
+  opacity: 0.6;
+}
+
+.reveal-content{
+  padding: 50px;
+  color: #ffffff;
+  background: #181818;
+}
+
+.reveal-left{
+  background: rgba(0,0,0);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: all .6s ease;
+}
+
+.cover{
+  background-color: #FFF3A3;
+  z-index: 10;
+}

@@ -1,0 +1,121 @@
+.button_1:hover{
+  animation-name: playButton;
+  animation-duration: 2s;
+}
+
+@keyframes playButton{
+  0% {background-color: #181818}
+  100% {background-color: #E3F0FF}
+}
+
+#home .container{
+  animation-name: home;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+
+@keyframes home{
+  0% {opacity:0;}
+  100% {opacity: 1}
+}
+
+/* Transition Box Slide */
+.box-slide{
+  border: 8px solid #FFD9D9;
+  position: relative;
+  overflow: hidden;
+}
+
+.box-slide:hover .reveal-left{
+  left: -100%;
+  opacity: 0.6;
+}
+
+.reveal-content{
+  padding: 20px;
+  color: #ffffff;
+  background: #181818;
+}
+
+.reveal-left{
+  background: #FFD9D9;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: all .7s ease;
+}
+
+.box-slide:hover .reveal-left-2{
+  left: -100%;
+  opacity: 0.5;
+}
+
+.reveal-left-2{
+  background: #FFD9D9;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: all 1.5s ease;
+}
+
+.cover{
+  background-color: #FFD9D9;
+  z-index: 10;
+}
+
+.box-slide-2{
+  border: 5px #E3F0FF solid;
+  position: relative;
+  overflow: hidden;
+}
+
+.box-slide-2:hover .reveal-right{
+  right: -100%;
+  opacity: 0.7;
+}
+
+.reveal-content-2{
+  color: #ffffff;
+  background: #181818;
+}
+
+.reveal-right{
+  background: #E3F0FF;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  transition: all 1s ease;
+}
+
+.cover-2{
+  background-color: #E3F0FF;
+  z-index: 10;
+}
+
+.shift{
+  transform: translateX(-90px);
+}
+
+.shift-2{
+  transform: translateX(75px);
+}
+
+/* @media only screen and (max-width: 768px){
+  .menu a:hover{
+    animation-name: playMenu;
+    animation-duration: 2s;
+  }
+
+  @keyframes playMenu{
+    0% {background-color: #181818}
+    100% {background-color: #FFD9D9}
+  }
+}
+*/
