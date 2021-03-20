@@ -390,7 +390,7 @@ section {
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #728394;
+  color: #0563bb;
 }
 
 .about .content ul {
@@ -527,7 +527,7 @@ section {
 
 .resume .resume-item h5 {
   font-size: 16px;
-  background: #f7f8f9;
+  background: #e6f2ff;
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
