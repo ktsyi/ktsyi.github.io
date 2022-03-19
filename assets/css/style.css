@@ -841,7 +841,7 @@ section {
 }
 
 .services .iconbox-blue i {
-  color: #47aeff;
+  color: #CAF1FF;
 }
 
 .services .iconbox-blue:hover .icon i {
@@ -849,7 +849,31 @@ section {
 }
 
 .services .iconbox-blue:hover .icon path {
-  fill: #47aeff;
+  fill: #CAF1FF;
+}
+
+.services .iconbox-blue2 i {
+  color: #AED4FF;
+}
+
+.services .iconbox-blue2:hover .icon i {
+  color: #fff;
+}
+
+.services .iconbox-blue2:hover .icon path {
+  fill: #AED4FF;
+}
+
+.services .iconbox-blue3 i {
+  color: #92B9E7;
+}
+
+.services .iconbox-blue3:hover .icon i {
+  color: #fff;
+}
+
+.services .iconbox-blue3:hover .icon path {
+  fill: #92B9E7;
 }
 
 .services .iconbox-orange i {
@@ -911,6 +935,8 @@ section {
 .services .iconbox-teal:hover .icon path {
   fill: #11dbcf;
 }
+
+
 
 /*--------------------------------------------------------------
 # Testimonials
