@@ -8,6 +8,8 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
@@ -58,6 +60,10 @@ h1, h2, h3, h4, h5, h6 {
 .back-to-top.active {
   visibility: visible;
   opacity: 1;
+}
+
+.highlighted {
+  color: #0563bb;
 }
 
 /*--------------------------------------------------------------
@@ -602,6 +608,7 @@ section {
   overflow: hidden;
   z-index: 1;
   background: rgba(69, 80, 91, 0.8);
+  height: 400px;
 }
 
 .portfolio .portfolio-wrap::before {
@@ -631,6 +638,16 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.portfolio-info {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.portfolio-description {
+  margin-right: 15px;
+  margin-left: 15px;
 }
 
 .portfolio .portfolio-wrap .portfolio-info::before {
