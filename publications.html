@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Publications · Kenny Yi</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="images/favicon.png">
 </head>
@@ -21,75 +21,74 @@
       </ul>
     </nav>
 
-    <!-- Narrow centered column; the nav above stays in the same place as on About -->
-    <main class="narrow">
-      <h1 class="headline">Publications - Work in Progress <span class="emoji">🚧</span></h1>
+      <section class="hero">
 
-      <!--
-        HOW TO ADD A PAPER
-        Copy one <div class="pub"> ... </div> block and paste it at the top of the right year.
-        - Thumbnail: put an image in images/ (about 3:2, e.g. 600x400) and update src.
-        - Put your own name in <b></b> so it stands out.
-        - Delete any link buttons you don't need.
-      -->
+      <!-- TOP ROW: page title, same as your name on About -->
+      <h1 class="name">Publications</h1>
 
-      <h2>2026</h2>
-
-      <div class="pub">
-        <img src="images/jmir-aya.png" alt="child holding phone">
-        <div>
-          <span class="venue">JMIR Formative Research</span>
-          <h3>Adolescent and Young Adult Preferences for the Delivery of Caring Contacts and the Incorporation of AI: Qualitative Interview Study</h3>
-          <p class="authors"><b>K. Yi</b>, S. Danzo, D. Chang, P. Wedgeworth</p>
-          <p class="links">
-            <a href="#">PDF</a>
-          </p>
+      <!-- LEFT COLUMN: kept so the list lines up with your bio -->
+      <aside class="hero-side">
+        <!--
+        <div class="social">
+          <a href="https://scholar.google.com/">Google Scholar</a>
         </div>
+        -->
+      </aside>
+
+      <!-- RIGHT COLUMN: year | papers -->
+      <div class="pub-list">
+
+        <!--
+          HOW TO ADD A PAPER
+          Copy one <div class="pub"> ... </div> into the right year.
+          For a new year, copy a whole <div class="pub-year"> block.
+          Put your own name in <b></b> so it stands out.
+        -->
+
+        <div class="pub-year">
+          <h2 class="year">2026</h2>
+          <div>
+            <div class="pub">
+              <h3>Adolescent and Young Adult Preferences for the Delivery of Caring Contacts and the Incorporation of AI: Qualitative Interview Study</h3>
+              <p class="authors"><b>K. Yi</b>, P. Wedgeworth, D. Chang, S. Danzo</p>
+              <p class="venue">JMIR Formative Research</p>
+              <p class="links"><a href="papers/yi-26-aya-caring-contacts.pdf">PDF</a></p>
+            </div>
+
+            <div class="pub">
+              <h3>Patient and Caregiver Perspectives Regarding Delivery of Caring Contacts and Remote Monitoring for Suicide Risk</h3>
+              <p class="authors">D. Chang, S. Danzo, P. Wedgeworth, <b>K. Yi</b></p>
+              <p class="venue">CFHA 2026 Poster</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-year">
+          <h2 class="year">2025</h2>
+          <div>
+            <div class="pub">
+              <h3>Utilizing Ontologies to Map the Intervention Landscape of Depression</h3>
+              <p class="authors">Z. Ji, C. Kim, <b>K. Yi</b>, J. Gennari</p>
+              <p class="venue">AMIA 2025 Poster</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-year">
+          <h2 class="year">2022</h2>
+          <div>
+            <div class="pub">
+              <h3>Examining Employment Conditions During the COVID-19 Pandemic in Pasifika Communities</h3>
+              <p class="authors">S. Camacho, K. Haitsuka, <b>K. Yi</b>, J. Seia, D. Huh, M.S. Spencer</p>
+              <p class="venue">Health Equity</p>
+              <p class="links"><a href="papers/camacho-22-examining-employment.pdf">PDF</a></p>
+            </div>
+          </div>
+        </div>
+
       </div>
-      <!--
-      <div class="pub">
-        <img src="images/pub-placeholder.svg" alt="">
-        <div>
-          <span class="venue">Conference 'YY</span>
-          <h3>Another Paper Title</h3>
-          <p class="authors">Coauthor One, <b>Your Name</b>, Coauthor Two</p>
-          <p class="note">Best Paper Honorable Mention</p>
-          <p class="links">
-            <a href="#">PDF</a>
-          </p>  
-        </div> 
-      </div> 
+    </section>
 
-      <h2>2025</h2>
-
-      <div class="pub">
-        <img src="images/pub-placeholder.svg" alt="">
-        <div>
-          <span class="venue">Workshop 'YY</span>
-          <h3>An Earlier Paper or Poster</h3>
-          <p class="authors"><b>Your Name</b>, Coauthor One</p>
-          <p class="links">
-            <a href="#">PDF</a>
-          </p>
-        </div>
-      </div> --> 
-
-    <h2>2022</h2>
-
-    <div class="pub">
-        <img src="images/pub-placeholder.svg" alt="">
-        <div>
-          <span class="venue">Health Equity</span>
-          <h3>Examining Employment Conditions During the COVID-19 Pandemic in Pasifika Communities</h3>
-          <p class="authors">S. Camacho, K. Haitsuka, <b>K. Yi</b>, J. Seia, D. Huh, M.S. Spencer</p>
-          <p class="links">
-            <a href="#">PDF</a>
-          </p>
-        </div>
-      </div> 
-  
-    </main>
-    
   </div>
 </body>
 </html>
